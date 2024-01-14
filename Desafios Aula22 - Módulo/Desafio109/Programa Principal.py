@@ -1,0 +1,20 @@
+import moeda
+from time import sleep
+
+print('=' * 50)
+print(f'{"Calculadora de porcentagem, dobro e metade":^50}')
+print('=' * 50)
+print()
+#  currency = str(input('Qual tipo de moeda deseja usar? Ex. "R$, U$..." '))
+valor = float(input(f'Digite o valor a ser calculado: R$'))
+percent = float(input('Digite a porcentagem a ser adicionada e subtraida: '))
+print()
+print('=' * 50)
+print(f'{"Calculando valores finais...":^50}')
+print('=' * 50)
+sleep(0)
+print()
+print(f'O valor {moeda.moeda(valor)} aumentado em {percent}% é: {moeda.aumentar(valor, percent, True)}')
+print(f'O valor {moeda.moeda(valor)} aumentado em {percent}% é: {moeda.diminuir(valor, percent, True)}')
+print(f'O dobro de {moeda.moeda(valor)} é: {moeda.dobro(valor, True)}')
+print(f'A metade de {moeda.moeda(valor)} é: {moeda.metade(valor, True)}')

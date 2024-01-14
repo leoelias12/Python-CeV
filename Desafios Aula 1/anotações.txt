@@ -1,0 +1,6 @@
+Ordem de precedência de operadores aritméticos
+1. ()
+2. **
+3. *, /, //, %
+4. +, -
+
