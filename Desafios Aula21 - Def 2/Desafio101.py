@@ -17,3 +17,4 @@ def voto(ano):
 #  MAIN
 nascimento = int(input('Em que ano vc nasceu? '))
 print(voto(int(nascimento)))
+
